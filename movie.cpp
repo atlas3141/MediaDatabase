@@ -10,8 +10,8 @@ movie::movie(){
   cout << "Rating?" << endl;
   cin.get(rating,5);
   cin.ignore();
-  cout << "Durration?" << endl;
-  cin >> durration;
+  cout << "Duration?" << endl;
+  cin >> duration;
   cin.ignore();
 }
 char* movie::getDirector(){
@@ -21,5 +21,5 @@ char* movie::getRating(){
   return rating;
 }
 float movie::getDuration(){
-  return durration;
+  return duration;
 }

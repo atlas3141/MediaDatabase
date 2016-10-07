@@ -11,5 +11,5 @@ class movie : public genericType{
  protected:
   char director[60];
   char rating[5];
-  float durration;
+  float duration;
 };
