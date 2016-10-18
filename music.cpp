@@ -7,7 +7,7 @@ music::music(){
   cout << "Artist?" << endl;
   cin.get(artist,60);
   cin.ignore();
-  cout << "Rating?" << endl;
+  cout << "Publisher?" << endl;
   cin.get(publisher,50);
   cin.ignore();
   cout << "Duration?" << endl;

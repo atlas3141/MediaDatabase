@@ -4,7 +4,7 @@ using namespace std;
 
 class genericType {
  public:
-  genericType(int newType);
+  genericType();
   char* getTitle();
   int getYear();
   int getType();

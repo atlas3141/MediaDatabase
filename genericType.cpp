@@ -3,10 +3,9 @@
 
 using namespace std;
 
-genericType::genericType(int newType){
-  type = newType;
+genericType::genericType(){
   cout << "Title?" << endl;
-  cin.get(title,30);
+  cin.get(title,100);
   cin.ignore();
   cout << "Year?" << endl;
   cin >> year;
