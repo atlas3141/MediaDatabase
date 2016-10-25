@@ -11,7 +11,7 @@ videoGame::videoGame(){
   cin.get(publisher,50);
   cin.ignore();
 }
-char* videoGame::publisher(){
+char* videoGame::getPublisher(){
   return publisher;
 }
 char* videoGame::getRating(){

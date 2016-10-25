@@ -2,9 +2,9 @@
 #include "genericType.h"
 using namespace std;
 
-class movie : public genericType{
+class videoGame : public genericType{
 public:
-  movie();
+  videoGame();
   char* getPublisher();
   char* getRating();
  protected:
