@@ -1,3 +1,4 @@
+//generic media class
 #include <iostream>
 #include "genericType.h"
 

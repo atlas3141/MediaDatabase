@@ -1,3 +1,4 @@
+//class to hold info about music
 #include <iostream>
 #include "music.h"
 
@@ -28,5 +29,5 @@ void music::print(){
   cout << title << " (" << year << ")" << endl;
   cout << "By " << artist << endl;
   cout << "Published by " << publisher << endl;
-  cout << duration << " minuets" << endl;
+  cout << duration << " Minutes" << endl;
 }

@@ -1,3 +1,4 @@
+//class to hold info about videoGames
 #include <iostream>
 #include "videoGame.h"
 

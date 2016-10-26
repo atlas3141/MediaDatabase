@@ -1,3 +1,5 @@
+//Josh Howell OCt 24th 2016
+//A program for holding the information of a bunch of different kinds of media
 # include <iostream>
 # include <vector>
 # include <cstring>
@@ -12,7 +14,7 @@ void newItem(vector<genericType*>* list);
 void searchItems(vector<genericType*>* list);
 
 int main(){
-  vector<genericType*> list;
+  vector<genericType*> list; //the storage vector
   char input[20];
   bool running = true;
   while (running == true){ //command line loop
@@ -25,7 +27,7 @@ int main(){
       newItem(& list);
     }
     else if (!strcmp(input, "HELP")){
-      cout << "Commands: \nSEARCH\nADD\nExit" << endl;
+      cout << "Commands: \nSEARCH\nADD\nEXIT" << endl;
     }
     else if (!strcmp(input, "EXIT")){
       running = false;
@@ -37,12 +39,12 @@ int main(){
   }
 }
 void searchItems(vector<genericType*>* list){ 
-  bool found = false;//ask witch student to delte
+  bool found = false;//ask what to seach to for
   char searchQuery[80];
-  cout << "Give Me an ID or Title to look for" << endl;
+  cout << "Give Me a Year or a Title to look for" << endl;
   cin.get(searchQuery,80);
   cin.ignore();
-  for(vector<genericType*>::iterator it = list->begin(); it != list-> end(); it++){ //look through the vector to find the item with that id
+  for(vector<genericType*>::iterator it = list->begin(); it != list-> end(); it++){ //look through the vector to find the item with that info
     if(!strcmp((*it)->getTitle(),searchQuery) || !strcmp((*it)->getYear(),searchQuery)){
       found = true;
       int type = (*it)->getType();
@@ -64,7 +66,7 @@ void searchItems(vector<genericType*>* list){
       cout << "No Items found" << endl;
   }
 } 
-void newItem(vector<genericType*>* list){
+void newItem(vector<genericType*>* list){ //ask what kind of item you need to add then create it 
   char input[10];
   cout << "Is it a Movie, Game or Music" << endl;
   cin.get(input,10);

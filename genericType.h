@@ -1,3 +1,4 @@
+//generic mediatype class
 #ifndef GENERICTYPE_H_INCLUDED
 #define GENERICTYPE_H_INCLUDED
 #include <iostream>

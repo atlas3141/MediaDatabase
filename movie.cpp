@@ -1,3 +1,5 @@
+//Clas to hold Data about music
+
 #include <iostream>
 #include "movie.h"
 
@@ -27,5 +29,5 @@ float movie::getDuration(){
 void movie::print(){
   cout << title << " (" << year << ")" << endl;
   cout << "Directed By " << director << endl;
-  cout << "(" << rating << ")" << duration << " minuets" << endl;
+  cout << "(" << rating << ")" << duration << " Minutes" << endl;
 }

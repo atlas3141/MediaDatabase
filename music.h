@@ -1,3 +1,4 @@
+//class to hold data about music
 #include <iostream>
 #include "genericType.h"
 using namespace std;

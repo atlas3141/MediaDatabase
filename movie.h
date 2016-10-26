@@ -1,3 +1,4 @@
+//Class to hold data about Movies
 #include <iostream>
 #include "genericType.h"
 using namespace std;

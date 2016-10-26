@@ -1,3 +1,4 @@
+//class to hold info about video games
 #include <iostream>
 #include "genericType.h"
 using namespace std;
