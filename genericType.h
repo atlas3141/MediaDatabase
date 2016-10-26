@@ -8,11 +8,11 @@ class genericType {
  public:
   genericType();
   char* getTitle();
-  int getYear();
+  char* getYear();
   int getType();
  protected:
   int type;
-  int year;
+  char year[7];
   char title[100];
 };
 #endif

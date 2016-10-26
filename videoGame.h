@@ -5,6 +5,7 @@ using namespace std;
 class videoGame : public genericType{
 public:
   videoGame();
+  void print();
   char* getPublisher();
   char* getRating();
  protected:

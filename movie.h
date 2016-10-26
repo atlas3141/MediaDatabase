@@ -5,6 +5,7 @@ using namespace std;
 class movie : public genericType{
  public: 
   movie();
+  void print();
   char* getDirector();
   char* getRating();
   float getDuration();

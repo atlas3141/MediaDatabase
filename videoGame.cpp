@@ -4,6 +4,7 @@
 using namespace std;
 
 videoGame::videoGame(){
+  type = 3;
   cout << "Publisher?" << endl;
   cin.get(publisher,60);
   cin.ignore();
@@ -16,4 +17,9 @@ char* videoGame::getPublisher(){
 }
 char* videoGame::getRating(){
   return rating;
+}
+void videoGame::print(){
+  cout << title << " (" << year << ")" << endl;
+  cout << "Published by " << publisher << endl;
+  cout << "Rated " << rating << endl;
 }

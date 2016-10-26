@@ -5,6 +5,7 @@ using namespace std;
 class music : public genericType{
  public:
   music();
+  void print();
   char* getArtist();
   char* getPublisher();
   float getDuration();

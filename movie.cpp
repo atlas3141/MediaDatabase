@@ -4,6 +4,7 @@
 using namespace std;
 
 movie::movie(){
+  type = 2;
   cout << "Director?" << endl;
   cin.get(director,50);
   cin.ignore();
@@ -22,4 +23,9 @@ char* movie::getRating(){
 }
 float movie::getDuration(){
   return duration;
+}
+void movie::print(){
+  cout << title << " (" << year << ")" << endl;
+  cout << "Directed By " << director << endl;
+  cout << "(" << rating << ")" << duration << " minuets" << endl;
 }

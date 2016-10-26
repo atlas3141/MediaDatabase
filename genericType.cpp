@@ -17,6 +17,6 @@ char* genericType::getTitle(){
 int genericType::getType(){
   return type;
 }
-int genericType::getYear(){
+char* genericType::getYear(){
   return year;
 }

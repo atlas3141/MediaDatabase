@@ -39,12 +39,25 @@ int main(){
 void searchItems(vector<genericType*>* list){ 
   bool found = false;//ask witch student to delte
   char searchQuery[80];
-  cout << "Give Me an ID or Title to look for";
+  cout << "Give Me an ID or Title to look for" << endl;
   cin.get(searchQuery,80);
   cin.ignore();
   for(vector<genericType*>::iterator it = list->begin(); it != list-> end(); it++){ //look through the vector to find the item with that id
-    if(!strcmp((*it)->getTitle(),searchQuery)){
+    if(!strcmp((*it)->getTitle(),searchQuery) || !strcmp((*it)->getYear(),searchQuery)){
       found = true;
+      int type = (*it)->getType();
+      if(type == 1){
+	music* m = (music*) (*it);
+	m->print();
+      }
+      if(type == 2){
+        movie* m = (movie*) (*it);
+        m->print();
+      }
+      if(type == 3){
+        videoGame* m = (videoGame*) (*it);
+        m->print();
+      }
     }
   }
   if (!found){
