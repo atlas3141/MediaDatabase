@@ -25,7 +25,7 @@ int main(){
       newItem(& list);
     }
     else if (!strcmp(input, "HELP")){
-      cout << "Commands: \nPSearch\nADD\nExit" << endl;
+      cout << "Commands: \nSEARCH\nADD\nExit" << endl;
     }
     else if (!strcmp(input, "EXIT")){
       running = false;
@@ -37,7 +37,38 @@ int main(){
   }
 }
 void searchItems(vector<genericType*>* list){ 
-}
+  bool found = false;//ask witch student to delte
+  char searchQuery[80];
+  cout << "Give Me an ID or Title to look for";
+  cin.get(searchQuery,80);
+  cin.ignore();
+  for(vector<genericType*>::iterator it = list->begin(); it != list-> end(); it++){ //look through the vector to find the item with that id
+    if(!strcmp((*it)->getTitle(),searchQuery)){
+      found = true;
+    }
+  }
+  if (!found){
+      cout << "No Items found" << endl;
+  }
+} 
 void newItem(vector<genericType*>* list){
-  
+  char input[10];
+  cout << "Is it a Movie, Game or Music" << endl;
+  cin.get(input,10);
+  cin.ignore();
+  if(!strcmp(input,"Music")){
+    music* c = new music();
+    list->push_back(c);
+  }
+  else if(!strcmp(input,"Movie")){
+    movie* c = new movie();
+    list->push_back(c);
+  }
+  else if(!strcmp(input,"Game")){
+    videoGame* c = new videoGame();
+    list->push_back(c);
+  }
+  else{
+    cout << "Thats not the word Music, Movie or Game" << endl;
+  }
 }
