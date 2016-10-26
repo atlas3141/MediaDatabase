@@ -30,7 +30,11 @@ int main(){
       cout << "Commands: \nSEARCH\nADD\nEXIT" << endl;
     }
     else if (!strcmp(input, "EXIT")){
+      for(vector<genericType*>::iterator it = list.begin(); it != list.end(); it++){
+	delete (*it);
+      }
       running = false;
+
     }
     else{
       cout << "No such command: " <<  input << endl;
