@@ -21,3 +21,6 @@ int genericType::getType(){
 char* genericType::getYear(){
   return year;
 }
+genericType::~genericType(){
+  cout << "You deleted something" << endl;
+}

@@ -8,6 +8,7 @@ using namespace std;
 class genericType {
  public:
   genericType();
+  ~genericType();
   char* getTitle();
   char* getYear();
   int getType();
